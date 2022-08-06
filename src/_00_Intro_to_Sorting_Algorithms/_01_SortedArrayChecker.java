@@ -1,5 +1,7 @@
 package _00_Intro_to_Sorting_Algorithms;
 
+import java.lang.reflect.Array;
+
 public class _01_SortedArrayChecker {
     /*
      * Write a static method called intArraySorted.
@@ -9,9 +11,20 @@ public class _01_SortedArrayChecker {
      * and false otherwise.
      */
     public static boolean intArraySorted(int[] arr) {
+       
         
-        return false;
+    	for(int i = 0;i<arr.length;i++) {
+    		if((arr[i]>arr[i+1])) {
+    			return false;
+    		}
+    		else {
+    			return true;
+    		}
+    	
     }
+    	
+    	return true;
+    } 
 
     /*
      * 2. Write a static method called doubleArraySorted.
@@ -20,6 +33,20 @@ public class _01_SortedArrayChecker {
      * The method returns true if the double array is in ascending order
      * and false otherwise.
      */
+public static boolean doubleArraySorted(double[]dou) {
+	for(int i = 0;i<dou.length;i++) {
+		if((dou[i]>dou[i+1])) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	
+}
+	
+	return true;
+} 
+	
 
 
     /*
@@ -30,7 +57,18 @@ public class _01_SortedArrayChecker {
      * order and false otherwise (You can compare characters just like
      * integers).
      */
-
+//public static boolean charArraySorted(char[]cha) {
+	
+//	for(int i = 0;i<cha.length;i++) {
+	//	if(cha[i].compareTo(cha[i+1])>0) {
+	//		return false;
+//		}
+	//	else {
+//			return true;
+	//	}
+	
+	//}
+	//return true;
 
     /*
      * 4. Write a static method called stringArraySorted.
